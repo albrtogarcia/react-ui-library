@@ -1,0 +1,48 @@
+{
+  "name": "react-ui-library",
+  "version": "0.1.0",
+  "author": "@albrtogarcia",
+  "description": "A React UI library",
+  "url": "https://github.com/albrtogarcia/react-ui-library",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "test": "vitest",
+    "test:unit": "vitest --root src/",
+    "preview": "vite build && vite preview --port=8010 --strictPort"
+  },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@originjs/vite-plugin-federation": "^1.3.2",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^18.2.13",
+    "@vitejs/plugin-react-swc": "^3.4.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.51.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "jsdom": "^22.1.0",
+    "sass": "^1.69.3",
+    "vite": "^4.4.11",
+    "vite-plugin-svgr": "^4.1.0",
+    "vitest": "^0.34.6",
+    "whatwg-fetch": "^3.6.19"
+  }
+}
